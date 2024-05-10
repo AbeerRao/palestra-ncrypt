@@ -1,14 +1,18 @@
+import Image from 'next/image'
 import React, { useState } from 'react'
+import Logo from "../images/Logo.svg"
+import LogoType from "../images/LogoType.svg"
 
 function Login() {
 
     const styles = {
         main: "flex flex-row items-center w-screen h-screen justify-center p-32 space-x-10",
-        leftDiv: "flex flex-col h-full w-1/2 justify-between items-start py-16",
+        leftDiv: "flex flex-col h-full w-1/2 justify-between items-start",
+        topDiv: "flex flex-row items-center justify-between w-1/2",
         textDiv: "flex flex-col items-start space-y-2",
         title: "text-6xl font-semibold text-center",
         desc: "font-light",
-        form: "flex flex-col items-start w-1/2 space-y-8",
+        form: "flex flex-col items-start space-y-8",
         input: "bg-transparent border-b-2 border-black w-full p-2 text-black placeholder-black text-xl focus:outline-none focus:border-accent transition duration-300",
         button: "w-full bg-transparent text-xl font-semibold py-2 rounded-full border-2 border-black transition duration-300 disabled:bg-gray-200 disabled:border-gray-200 disabled:text-gray-500 disabled:cursor-not-allowed disabled:font-normal hover:bg-black hover:text-accent hover:scale-95",
         bottomText: "text-sm font-light text-center w-1/2"
@@ -29,11 +33,15 @@ function Login() {
             </head>
             <div className={styles.main}>
                 <div className={styles.leftDiv}>
-                    <div className={styles.textDiv}>
-                        <h1 className={styles.title}>Welcome Back!</h1>
-                        <h2 className={styles.desc}>Don&apos;t have an account? Register</h2>
+                    <div className={styles.topDiv}>
+                        <Image src={Logo} />
+                        <Image src={LogoType} />
                     </div>
                     <form className={styles.form}>
+                        <div className={styles.textDiv}>
+                            <h1 className={styles.title}>Welcome Back!</h1>
+                            <h2 className={styles.desc}>Don&apos;t have an account? Register</h2>
+                        </div>
                         <input type="text" placeholder="Email" className={styles.input} value={email} onChange={(e) => setEmail(e.target.value)} />
                         <input type="password" placeholder="Password" className={styles.input} value={password} onChange={(e) => setPassword(e.target.value)} />
                         <button className={styles.button} disabled={!email || !password} onClick={(e) => handleLogin(e)}>Login</button>
