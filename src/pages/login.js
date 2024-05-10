@@ -31,7 +31,7 @@ function Login() {
                 <div className={styles.leftDiv}>
                     <div className={styles.textDiv}>
                         <h1 className={styles.title}>Welcome Back!</h1>
-                        <h2 className={styles.desc}>Don't have an account? Register</h2>
+                        <h2 className={styles.desc}>Don&apos;t have an account? Register</h2>
                     </div>
                     <form className={styles.form}>
                         <input type="text" placeholder="Email" className={styles.input} value={email} onChange={(e) => setEmail(e.target.value)} />
