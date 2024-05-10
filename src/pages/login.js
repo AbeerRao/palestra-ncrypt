@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Logo from "../images/Logo.svg"
 import LogoType from "../images/LogoType.svg"
+import LoginImg from "../images/LoginImg.svg"
 
 function Login() {
 
@@ -15,7 +16,9 @@ function Login() {
         form: "flex flex-col items-start space-y-8",
         input: "bg-transparent border-b-2 border-black w-full p-2 text-black placeholder-black text-xl focus:outline-none focus:border-accent transition duration-300",
         button: "w-full bg-transparent text-xl font-semibold py-2 rounded-full border-2 border-black transition duration-300 disabled:bg-gray-200 disabled:border-gray-200 disabled:text-gray-500 disabled:cursor-not-allowed disabled:font-normal hover:bg-black hover:text-accent hover:scale-95",
-        bottomText: "text-sm font-light text-center w-1/2"
+        bottomText: "text-sm font-light text-center w-1/2",
+        rightDiv: "w-1/2 h-max",
+        image: "w-full h-full object-cover"
     }
 
     const [email, setEmail] = useState("")
@@ -28,9 +31,7 @@ function Login() {
 
     return (
         <main>
-            <head>
-                <title>Login to Palestra</title>
-            </head>
+            <title>Login to Palestra</title>
             <div className={styles.main}>
                 <div className={styles.leftDiv}>
                     <div className={styles.topDiv}>
@@ -48,8 +49,8 @@ function Login() {
                     </form>
                     <p className={styles.bottomText}>By signing up, you agree to our terms of service and privacy policy</p>
                 </div>
-                <div className={styles.leftDiv}>
-                    {/* <h1 className={styles.title}>Get Started</h1> */}
+                <div className={styles.rightDiv}>
+                    <Image src={LoginImg} className={styles.image} />
                 </div>
             </div>
         </main>
