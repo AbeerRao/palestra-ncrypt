@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Logo from "../images/Logo.svg"
 
-function Header() {
+function Header({ loginDisplay }) {
 
     const styles = {
         main: "text-white flex flex-row justify-between w-full items-start",
@@ -25,9 +25,12 @@ function Header() {
                     <h1 className={styles.select}>Forums</h1>
                 </div>
             </div>
-            <div className={styles.leftDiv}>
-                <h1 className={styles.leftButton}>Login</h1>
-            </div>
+            {
+                loginDisplay && 
+                <div className={styles.leftDiv}>
+                    <h1 className={styles.leftButton}>Login</h1>
+                </div>
+            }
         </div>
     )
 }
