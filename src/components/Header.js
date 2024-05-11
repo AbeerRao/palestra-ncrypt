@@ -5,13 +5,13 @@ import Logo from "../images/Logo.svg"
 function Header() {
 
     const styles = {
-        main: "text-white flex flex-row justify-between w-full",
-        rightDiv: "flex flex-row items-center px-10 py-14",
+        main: "text-white flex flex-row justify-between w-full items-start",
+        rightDiv: "flex flex-row items-center 2xl:px-12 px-3 2xl:py-14 py-20",
         logo: "w-16 h-16 object-fit bg-white rounded-full p-1",
-        leftDiv: "px-12 py-12",
+        leftDiv: "2xl:px-12 px-2 2xl:py-12 py-16",
         headerSelect: "flex flex-row items-center space-x-6 bg-white rounded-full py-2 px-6 h-16",
         select: "text-black hover:text-accent bg-transparent hover:bg-black rounded-full cursor-pointer px-5 py-2 transition duration-400 ease-in-out",
-        leftButton: "h-16 bg-black text-accent w-40 rounded-full flex flex-col items-center justify-center font-semibold cursor-pointer hover:bg-accent hover:text-black transition duration-400 ease-in-out"
+        leftButton: "2xl:h-16 h-12 bg-black text-accent 2xl:w-40 w-32 rounded-full flex flex-col items-center justify-center font-semibold cursor-pointer hover:bg-accent hover:text-black transition duration-400 ease-in-out"
     }
 
     return (

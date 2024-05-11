@@ -6,7 +6,7 @@ export default function Home() {
 
   const styles = {
     main: "min-h-screen items-center flex flex-col max-w-screen overflow-x-hidden",
-    div: "flex w-screen flex-col items-start justify-between main-bg h-[50rem] max-w-screen"
+    div: "flex w-screen flex-col items-start justify-between main-bg 2xl:h-[50rem] h-[40rem]"
   }
 
   return (
