@@ -8,7 +8,7 @@ function Landing() {
         bottomDiv: "flex flex-row items-start w-full text-white 2xl:space-x-14 space-x-8 h-44 2xl:h-48",
         title: "2xl:text-9xl text-7xl font-semibold flex flex-row items-center tracking-tighter",
         desc: "font-extralight text-center text-wrap pr-56 text-sm 2xl:text-base",
-        bottomLeft: "text-black 2xl:pl-14 pl-10 w-1/5",
+        bottomLeft: "text-[#151515] 2xl:pl-14 pl-10 w-1/5",
         bottomTitle: "2xl:text-4xl text-2xl font-semibold tracking-tighter",
         bottomDesc: "font-extralight mt-2 text-sm 2xl:text-base"
     }

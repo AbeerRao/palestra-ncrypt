@@ -21,8 +21,8 @@ function Trainer() {
             <div className={styles.topDiv}>
                 <Header loginDisplay={false} />
                 <div className={styles.topInfo}>
-                    <h1 className={styles.topTitle}><p className="pr-1 text-black">Trainer & Diet Plans</p>.</h1>
-                    <h1 className={styles.topTitle}><p className="pr-1 text-black">{curr.slice(0, 4)}</p>.<p className="pr-1 text-black">{curr.slice(4)}</p></h1>
+                    <h1 className={styles.topTitle}><p className="pr-1 text-[#151515]">Trainer & Diet Plans</p>.</h1>
+                    <h1 className={styles.topTitle}><p className="pr-1 text-[#151515]">{curr.slice(0, 4)}</p>.<p className="pr-1 text-[#151515]">{curr.slice(4)}</p></h1>
                 </div>
             </div>
             <div className={styles.trainerInfo}>

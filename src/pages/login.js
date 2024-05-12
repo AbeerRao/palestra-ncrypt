@@ -3,8 +3,11 @@ import React, { useState } from 'react'
 import Logo from "../images/Logo.svg"
 import LogoType from "../images/LogoType.svg"
 import LoginImg from "../images/LoginImg.svg"
+import { useRouter } from 'next/router'
 
 function Login() {
+
+    const router = useRouter()
 
     const styles = {
         main: "flex flex-row items-center w-screen h-screen justify-center 2xl:p-32 p-24 space-x-10",
@@ -14,8 +17,8 @@ function Login() {
         title: "text-6xl font-semibold text-center",
         desc: "font-light",
         form: "flex flex-col items-start space-y-8",
-        input: "bg-transparent border-b-2 border-black w-full p-2 text-black placeholder-black text-xl focus:outline-none focus:border-accent transition duration-300",
-        button: "w-full bg-transparent text-xl font-semibold py-2 rounded-full border-2 border-black transition duration-300 disabled:bg-gray-200 disabled:border-gray-200 disabled:text-gray-500 disabled:cursor-not-allowed disabled:font-normal hover:bg-black hover:text-accent hover:scale-95",
+        input: "bg-transparent border-b-2 border-[#151515] w-full p-2 text-[#151515] placeholder-[#151515] text-xl focus:outline-none focus:border-accent transition duration-300",
+        button: "w-full bg-transparent text-xl font-semibold py-2 rounded-full border-2 border-[#151515] transition duration-300 disabled:bg-gray-200 disabled:border-gray-200 disabled:text-gray-500 disabled:cursor-not-allowed disabled:font-normal hover:bg-[#151515] hover:text-accent hover:scale-95",
         bottomText: "text-sm font-light 2xl:text-center w-1/2",
         rightDiv: "w-1/2 h-max",
         image: "w-full h-full object-cover"
@@ -26,7 +29,7 @@ function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault()
-        alert(`Email: ${email} Password: ${password}`)
+        router.push("/dashboard")
     }
 
     return (

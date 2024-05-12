@@ -5,11 +5,11 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 function ActiveBlackBox({ allInfo }) {
 
     const styles = {
-        main: "2xl:w-1/3 w-full h-full bg-black p-2 rounded-2xl overflow-y-auto no-scrollbar",
+        main: "2xl:w-1/3 w-full h-full bg-[#151515] p-2 rounded-2xl overflow-y-auto no-scrollbar",
         mainDiv: "flex flex-col items-center justify-between text-white border-2 space-y-5 border-accent rounded-2xl p-4",
         topInfo: "w-full flex flex-row items-center justify-between space-x-5",
         sideTitle: "w-1/2 text-sm font-extralight border-2 border-accent rounded-full p-2 text-center",
-        middleDiv: "flex flex-col items-center w-full h-full bg-white rounded-2xl space-y-3 px-4 py-6 text-black",
+        middleDiv: "flex flex-col items-center w-full h-full bg-white rounded-2xl space-y-3 px-4 py-6 text-[#151515]",
         middleTop: "flex flex-row items-center w-full justify-between",
         middleBottom: "flex flex-col items-center w-full h-full justify-between space-y-2"
     }

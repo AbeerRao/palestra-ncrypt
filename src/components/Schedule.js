@@ -6,12 +6,12 @@ import Image from 'next/image'
 function Schedule() {
 
     const styles = {
-        main: "bg-black w-1/2 h-full px-12 py-8 text-white rounded-2xl flex flex-col items-start justify-between space-y-1",
+        main: "bg-[#151515] w-1/2 h-full px-12 py-8 text-white rounded-2xl flex flex-col items-start justify-between space-y-1",
         topDiv: "flex flex-row items-start w-full justify-between",
         bottomDiv: "flex flex-row items-end w-full h-full space-x-5",
         todayDiv: "w-full bg-accent rounded-full h-full text-white px-1 py-2 font-semibold flex flex-col items-center justify-start space-y-1 text-xl",
-        nextDiv: "w-full bg-white text-black rounded-full h-4/5 px-1 py-2 font-semibold flex flex-col items-center justify-start space-y-1 text-2xl",
-        prevDiv: "w-full bg-gray-400 text-black rounded-full h-4/5 px-1 py-2 font-semibold flex flex-col items-center justify-start space-y-1 text-2xl"
+        nextDiv: "w-full bg-white text-[#151515] rounded-full h-4/5 px-1 py-2 font-semibold flex flex-col items-center justify-start space-y-1 text-2xl",
+        prevDiv: "w-full bg-gray-400 text-[#151515] rounded-full h-4/5 px-1 py-2 font-semibold flex flex-col items-center justify-start space-y-1 text-2xl"
     }
 
     const getWeekDates = () => {

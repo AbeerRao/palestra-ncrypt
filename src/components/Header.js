@@ -34,9 +34,9 @@ function Header({ loginDisplay }) {
         logo: "w-16 h-16 object-fit bg-white rounded-full p-1",
         leftDiv: "2xl:px-12 px-2 2xl:py-12 py-16",
         headerSelect: "flex flex-row items-center space-x-6 bg-white rounded-full py-2 px-6 h-16",
-        select: "text-black hover:text-accent bg-transparent hover:bg-black rounded-full cursor-pointer px-5 py-2 transition duration-400 ease-in-out",
-        activeSelect: "text-accent bg-black rounded-full cursor-pointer px-5 py-2 transition duration-400 ease-in-out",
-        leftButton: "2xl:h-16 h-12 bg-black text-accent 2xl:w-40 w-32 rounded-full flex flex-col items-center justify-center font-semibold cursor-pointer hover:bg-accent hover:text-black transition duration-400 ease-in-out"
+        select: "text-[#151515] hover:text-accent bg-transparent hover:bg-[#151515] rounded-full cursor-pointer px-5 py-2 transition duration-400 ease-in-out",
+        activeSelect: "text-accent bg-[#151515] rounded-full cursor-pointer px-5 py-2 transition duration-400 ease-in-out",
+        leftButton: "2xl:h-16 h-12 bg-[#151515] text-accent 2xl:w-40 w-32 rounded-full flex flex-col items-center justify-center font-semibold cursor-pointer hover:bg-accent hover:text-[#151515] transition duration-400 ease-in-out"
     }
 
     return (
@@ -65,9 +65,11 @@ function Header({ loginDisplay }) {
             </div>
             {
                 loginDisplay && 
-                <div className={styles.leftDiv}>
-                    <h1 className={styles.leftButton}>Login</h1>
-                </div>
+                <Link href="/login">
+                    <div className={styles.leftDiv}>
+                        <h1 className={styles.leftButton}>Login</h1>
+                    </div>
+                </Link>
             }
         </div>
     )

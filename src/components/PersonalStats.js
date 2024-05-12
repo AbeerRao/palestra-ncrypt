@@ -6,10 +6,10 @@ import Image from 'next/image'
 function PersonalStats() {
 
     const styles = {
-        main: "bg-white border-2 border-black w-1/2 h-full rounded-2xl flex flex-col items-start justify-between",
-        topDiv: "flex flex-row items-start w-full justify-between bg-black h-2/5 px-12 py-8 rounded-t-xl text-white",
+        main: "bg-white border-2 border-[#151515] w-1/2 h-full rounded-2xl flex flex-col items-start justify-between",
+        topDiv: "flex flex-row items-start w-full justify-between bg-[#151515] h-2/5 px-12 py-8 rounded-t-xl text-white",
         bottomDiv: "flex flex-row items-center space-x-12 w-full h-3/5 px-12 rounded-b-xl py-3",
-        statDiv: "w-1/2 h-full bg-accent rounded-2xl flex flex-col items-center justify-between text-2xl font-semibold text-black",
+        statDiv: "w-1/2 h-full bg-accent rounded-2xl flex flex-col items-center justify-between text-2xl font-semibold text-[#151515]",
         statsTop: "flex flex-row items-center justify-between w-full px-5 py-3",
         statsBottom: "flex flex-row items-center justify-end w-full px-5 py-3"
     }
