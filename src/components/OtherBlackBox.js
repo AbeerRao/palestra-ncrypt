@@ -10,6 +10,7 @@ function OtherBlackBox({ allInfo }) {
         topInfo: "w-full flex flex-row items-center justify-between space-x-5",
         middleDiv: "flex flex-col items-center w-full h-1/2 bg-white rounded-2xl space-y-3 px-4 py-6 text-[#151515]",
         middleTop: "flex flex-row items-center w-full justify-between",
+        middleTopL: "flex flex-col items-start w-full justify-between",
         middleBottom: "flex flex-col items-center w-full h-full justify-center"
     }
 
@@ -22,10 +23,17 @@ function OtherBlackBox({ allInfo }) {
                 {
                     allInfo.midInfo.map((mInfo, mIndex) => (
                         <div className={styles.middleDiv} key={mIndex}>
-                            <div className={styles.middleTop}>
-                                <h1 className="font-semibold text-2xl">{mInfo.name}</h1>
-                                <Image src={mInfo.icon} />
-                            </div>
+                            {
+                                allInfo.recipe ?
+                                    <div className={styles.middleTopL}>
+                                        <h1 className="font-semibold text-2xl">{mInfo.name}</h1>
+                                        <Image src={mInfo.icon} className="w-full rounded-2xl mt-2" />
+                                    </div> :
+                                    <div className={styles.middleTop}>
+                                        <h1 className="font-semibold text-2xl">{mInfo.name}</h1>
+                                        <Image src={mInfo.icon} />
+                                    </div>
+                            }
                             <div className={styles.middleBottom}>
                                 {
                                     mInfo.midPoints.map((info, index) => (

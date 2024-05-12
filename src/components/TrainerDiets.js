@@ -3,6 +3,7 @@ import MuscleImg from "../images/MuscleImg.svg"
 import ActiveBlackBox from './ActiveBlackBox'
 import AbsImg from "../images/AbsImg.svg"
 import RunImg from "../images/RunImg.svg"
+import RecipeImg from "../images/RecipeImg.svg"
 import OtherBlackBox from './OtherBlackBox'
 
 function TrainerDiets() {
@@ -39,6 +40,18 @@ function TrainerDiets() {
             ]
         }]
     }
+    const recipeInfo = {
+        topTitle: "Recipes",
+        midInfo: [{
+            name: "High Protein Ice Cream",
+            icon: RecipeImg,
+            midPoints: [
+                "Whip cream until soft peaks form, then mix in condensed milk until thick and well combined then add protein powder.",
+                "Transfer mixture to a container, cover, and freeze until solid, about 6 hours.",
+            ]
+        }],
+        recipe: true
+    }
 
     const styles = {
         main: "w-1/2 h-full flex flex-col items-end justify-between p-10 bg-[#fff6e6] rounded-l-2xl overflow-hidden",
@@ -51,6 +64,7 @@ function TrainerDiets() {
             <div className={styles.topDiv}>
                 <ActiveBlackBox allInfo={currentInfo} />
                 <OtherBlackBox allInfo={otherInfo} />
+                <OtherBlackBox allInfo={recipeInfo} />
             </div>
         </div>
     )
