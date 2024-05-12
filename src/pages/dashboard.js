@@ -13,10 +13,10 @@ function Dashboard() {
         topDiv: "bg-accent w-full h-full rounded-b-[4rem] h-[40vh] flex flex-col items-center justify-between pb-10",
         topInfo: "w-full flex flex-row items-center justify-between px-10",
         topTitle: "flex flex-row items-center justify-center text-white text-7xl font-semibold tracking-tighter",
-        dashboardInfo: "flex flex-row items-center justify-center space-x-5 w-full p-10 h-[60vh]",
-        infoLeft: "flex flex-col items-center justify-center w-2/3 h-full space-y-5",
+        dashboardInfo: "flex flex-col 2xl:flex-row items-center space-y-5 2xl:space-y-0 justify-center 2xl:space-x-5 w-full p-10 h-[70vh]",
+        infoLeft: "flex flex-col items-center justify-center 2xl:w-2/3 w-full h-full space-y-5",
         leftInfo: "w-full h-1/2 flex flex-row items-center justify-center space-x-5",
-        infoRight: "flex flex-row items-center justify-center w-1/3 h-full space-x-5"
+        infoRight: "flex flex-row items-center justify-center 2xl:w-1/3 w-full h-full space-x-5"
     }
 
     const curr = new Date().toString().slice(4, 10)
