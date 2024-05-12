@@ -10,7 +10,7 @@ function CalorieCount() {
         bottomDiv: "flex flex-col items-center w-full h-3/5 space-y-2",
         countDiv: "flex flex-row items-center justify-between w-full h-1/3 space-x-5",
         countLeft: "h-full flex flex-row items-center space-x-2 divide-x-2 divide-black w-1/4",
-        countRight: "w-3/4 border-r-2 border-black h-full flex flex-col items-end pr-5"
+        countRight: "w-3/4 h-full flex flex-col items-end"
     }
 
     const information = [

@@ -1,4 +1,5 @@
 import CalorieCount from '@/components/CalorieCount'
+import DietPlan from '@/components/DietPlan'
 import Header from '@/components/Header'
 import PersonalStats from '@/components/PersonalStats'
 import Schedule from '@/components/Schedule'
@@ -13,10 +14,10 @@ function Dashboard() {
         topDiv: "bg-accent w-full h-full rounded-b-[4rem] h-[40vh] flex flex-col items-center justify-between pb-10",
         topInfo: "w-full flex flex-row items-center justify-between px-10",
         topTitle: "flex flex-row items-center justify-center text-white text-7xl font-semibold tracking-tighter",
-        dashboardInfo: "flex flex-col 2xl:flex-row items-center space-y-5 2xl:space-y-0 justify-center 2xl:space-x-5 w-full p-10 h-[70vh]",
-        infoLeft: "flex flex-col items-center justify-center 2xl:w-2/3 w-full h-full space-y-5",
+        dashboardInfo: "flex flex-col 2xl:flex-row items-center space-y-5 2xl:space-y-0 justify-center 2xl:space-x-5 w-full p-10 2xl:h-[70vh] h-[140vh]",
+        infoLeft: "flex flex-col items-center justify-center 2xl:w-3/5 w-full h-full space-y-5",
         leftInfo: "w-full h-1/2 flex flex-row items-center justify-center space-x-5",
-        infoRight: "flex flex-row items-center justify-center 2xl:w-1/3 w-full h-full space-x-5"
+        infoRight: "flex flex-row items-center justify-center 2xl:w-2/5 w-full h-full space-x-5"
     }
 
     const curr = new Date().toString().slice(4, 10)
@@ -45,7 +46,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.infoRight}>
                     <WorkoutPlan />
-                    <WorkoutPlan />
+                    <DietPlan />
                 </div>
             </div>
         </div>
