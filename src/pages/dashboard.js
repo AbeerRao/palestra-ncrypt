@@ -1,5 +1,6 @@
 import CalorieCount from '@/components/CalorieCount'
 import Header from '@/components/Header'
+import PersonalStats from '@/components/PersonalStats'
 import Schedule from '@/components/Schedule'
 import StepCount from '@/components/StepCount'
 import WorkoutPlan from '@/components/WorkoutPlan'
@@ -13,9 +14,9 @@ function Dashboard() {
         topInfo: "w-full flex flex-row items-center justify-between px-10",
         topTitle: "flex flex-row items-center justify-center text-white text-7xl font-semibold tracking-tighter",
         dashboardInfo: "flex flex-row items-center justify-center space-x-5 w-full p-10 h-[60vh]",
-        infoLeft: "flex flex-col items-center justify-center w-1/2 h-full space-y-5",
+        infoLeft: "flex flex-col items-center justify-center w-2/3 h-full space-y-5",
         leftInfo: "w-full h-1/2 flex flex-row items-center justify-center space-x-5",
-        infoRight: "flex flex-row items-center justify-center w-1/2 h-full space-x-5"
+        infoRight: "flex flex-row items-center justify-center w-1/3 h-full space-x-5"
     }
 
     const curr = new Date().toString().slice(4, 10)
@@ -34,7 +35,7 @@ function Dashboard() {
                 <div className={styles.infoLeft}>
                     <div className={styles.leftInfo}>
                         <Schedule />
-                        <Schedule />
+                        <PersonalStats />
                     </div>
                     <div className={styles.leftInfo}>
                         <StepCount />
