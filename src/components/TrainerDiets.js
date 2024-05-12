@@ -42,7 +42,7 @@ function TrainerDiets() {
 
     const styles = {
         main: "w-1/2 h-full flex flex-col items-end justify-between p-10 bg-[#fff6e6] rounded-l-2xl overflow-hidden",
-        topDiv: "flex flex-row items-center space-x-5 w-full h-4/5"
+        topDiv: "flex flex-col 2xl:flex-row items-center space-x-0 space-y-5 2xl:space-y-0 2xl:space-x-5 w-full h-4/5"
     }
 
     return (

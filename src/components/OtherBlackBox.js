@@ -5,7 +5,7 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 function OtherBlackBox({ allInfo }) {
 
     const styles = {
-        main: "w-1/3 h-full bg-black p-2 rounded-2xl no-scrollbar overflow-y-auto",
+        main: "2xl:w-1/3 w-full h-full bg-black p-2 rounded-2xl no-scrollbar overflow-y-auto",
         mainDiv: "flex flex-col items-center justify-between text-white border-2 space-y-5 border-white rounded-2xl p-4 no-scrollbar overflow-y-auto",
         topInfo: "w-full flex flex-row items-center justify-between space-x-5",
         middleDiv: "flex flex-col items-center w-full h-1/2 bg-white rounded-2xl space-y-3 px-4 py-6 text-black",

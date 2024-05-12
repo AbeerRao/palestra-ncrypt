@@ -42,8 +42,8 @@ function TrainerPlans() {
     }
 
     const styles = {
-        main: "w-1/2 h-full flex flex-col items-start justify-between p-10 bg-[#E8E8E8] rounded-r-2xl overflow-hidden",
-        topDiv: "flex flex-row items-center space-x-5 w-full h-4/5"
+        main: "w-1/2 h-full flex flex-col-reverse 2xl:flex-col items-start justify-between p-10 bg-[#E8E8E8] rounded-r-2xl overflow-hidden",
+        topDiv: "flex flex-col 2xl:flex-row items-center space-x-0 space-y-5 2xl:space-y-0 2xl:space-x-5 w-full h-4/5"
     }
 
     return (
