@@ -22,6 +22,7 @@ function Dashboard() {
 
     return (
         <div className={styles.main}>
+            <title>My Dashboard</title>
             <div className={styles.topDiv}>
                 <Header loginDisplay={false} />
                 <div className={styles.topInfo}>

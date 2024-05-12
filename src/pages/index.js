@@ -11,6 +11,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <title>Welcome To Palestra</title>
       <div className={styles.div}>
         <Header />
         <Landing />
