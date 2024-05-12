@@ -13,7 +13,7 @@ export default function Home() {
     <main className={styles.main}>
       <title>Welcome To Palestra</title>
       <div className={styles.div}>
-        <Header />
+        <Header loginDisplay={true} />
         <Landing />
       </div>
       <HomeInfo />

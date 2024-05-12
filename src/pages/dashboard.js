@@ -5,7 +5,9 @@ import PersonalStats from '@/components/PersonalStats'
 import Schedule from '@/components/Schedule'
 import StepCount from '@/components/StepCount'
 import WorkoutPlan from '@/components/WorkoutPlan'
+import DashboardIm from "../images/DashboardIm.svg"
 import React from 'react'
+import Image from 'next/image'
 
 function Dashboard() {
 
@@ -13,7 +15,7 @@ function Dashboard() {
         main: "flex flex-col items-center justify-center min-w-screen",
         topDiv: "bg-accent w-full h-full rounded-b-[4rem] h-[40vh] flex flex-col items-center justify-between pb-10",
         topInfo: "w-full flex flex-row items-center justify-between px-10",
-        topTitle: "text-7xl font-semibold -tracking-widest flex flex-row items-center",
+        topTitle: "text-7xl font-semibold -tracking-widest flex flex-row items-center text-white",
         dashboardInfo: "flex flex-col 2xl:flex-row items-center space-y-5 2xl:space-y-0 justify-center 2xl:space-x-5 w-full p-10 2xl:h-[70vh] h-[140vh]",
         infoLeft: "flex flex-col items-center justify-center 2xl:w-3/5 w-full h-full space-y-5",
         leftInfo: "w-full h-1/2 flex flex-row items-center justify-center space-x-5",
@@ -41,7 +43,9 @@ function Dashboard() {
                     <div className={styles.leftInfo}>
                         <StepCount />
                         <CalorieCount />
-                        <StepCount />
+                        <div className="w-1/3 h-full">
+                            <Image src={DashboardIm} className="h-full w-full object-cover rounded-2xl" />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.infoRight}>
