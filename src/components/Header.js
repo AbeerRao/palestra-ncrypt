@@ -48,13 +48,13 @@ function Header({ loginDisplay }) {
                         pages.map((page, index) => {
                             if (page.link == curr) {
                                 return (
-                                    <Link href={page?.link}>
+                                    <Link href={page?.link} key={index}>
                                         <h1 key={index} className={styles.activeSelect}>{page.name}</h1>
                                     </Link>
                                 )
                             } else {
                                 return (
-                                    <Link href={page?.link}>
+                                    <Link href={page?.link} key={index}>
                                         <h1 key={index} className={styles.select}>{page.name}</h1>
                                     </Link>
                                 )
